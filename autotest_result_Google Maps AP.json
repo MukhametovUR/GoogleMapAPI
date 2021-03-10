@@ -1,0 +1,191 @@
+{
+	"id": "616e1683-d5e3-4331-883b-56ec2670b986",
+	"name": "Google Maps API",
+	"timestamp": "2021-03-10T20:16:17.596Z",
+	"collection_id": "717df3ef-23ba-4bec-9f45-98810571fd97",
+	"folder_id": 0,
+	"environment_id": "5bcf7520-31c9-4322-8f80-83c972f9ba3d",
+	"totalPass": 8,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "8f18a440-bc64-4791-abb2-0ee25843afa7",
+			"name": "Add Place",
+			"url": "https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123",
+			"time": 538,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Set variable": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Set variable": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				538
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Set variable": true
+				}
+			]
+		},
+		{
+			"id": "43c288f4-5c1f-466d-9fe6-eb9c64ef0bce",
+			"name": "Get Place",
+			"url": "https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=cb3315d8e2dd80a1751ca5ce352604f8",
+			"time": 1642,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check our address data": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check our address data": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1642
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check our address data": true
+				}
+			]
+		},
+		{
+			"id": "d0450231-2d04-4842-b713-5c8d0dbd2615",
+			"name": "Update Place",
+			"url": "https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123",
+			"time": 1901,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Address successfully updated": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Address successfully updated": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1901
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Address successfully updated": true
+				}
+			]
+		},
+		{
+			"id": "3066da2a-1590-45f0-9705-3516f4e71862",
+			"name": "Remove Place",
+			"url": "https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123",
+			"time": 1893,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1893
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "cdf81b62-5660-44c9-9b33-42c7f27c0943",
+			"name": "Get Place agter Removing",
+			"url": "https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=cb3315d8e2dd80a1751ca5ce352604f8",
+			"time": 1575,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1575
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 7549,
+	"collection": {
+		"requests": [
+			{
+				"id": "8f18a440-bc64-4791-abb2-0ee25843afa7",
+				"method": "POST"
+			},
+			{
+				"id": "43c288f4-5c1f-466d-9fe6-eb9c64ef0bce",
+				"method": "GET"
+			},
+			{
+				"id": "d0450231-2d04-4842-b713-5c8d0dbd2615",
+				"method": "PUT"
+			},
+			{
+				"id": "3066da2a-1590-45f0-9705-3516f4e71862",
+				"method": "DELETE"
+			},
+			{
+				"id": "cdf81b62-5660-44c9-9b33-42c7f27c0943",
+				"method": "GET"
+			}
+		]
+	}
+}
